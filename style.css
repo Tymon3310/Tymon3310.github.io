@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
 
 html{
-    background: linear-gradient(135deg, white, rgb(0, 162, 255)) no-repeat center center fixed;
+    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(0, 162, 255)) no-repeat center center fixed;
     font-family: "Sofia Sans", sans-serif;
     -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -21,9 +21,9 @@ body {
 }
 
 .content{
-    background-color: white;
+    background-color: rgb(65, 64, 64);
     border-radius: 35px;
-    color:black;
+    color:rgb(255, 255, 255);
     width: 50%;
     text-align: center;
     margin: auto;
@@ -60,7 +60,7 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     color: #fff;
-    background-color: #007bff;
+    background-color: #0004ff;
     border-radius: 4px;
     font-size: 18px;
     font-weight: bold;
@@ -80,7 +80,7 @@ body {
   
   @keyframes hover-in {
     from {
-      background-color: #007bff;
+      background-color: #5865F2;
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     }
     to {
@@ -97,7 +97,7 @@ body {
       transform: translateY(-3px);
     }
     to {
-        background-color: #007bff;
+        background-color: #5865F2;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     }
   }
@@ -107,7 +107,7 @@ body {
 }
 
 .tworca {
-    color: rgb(0, 89, 255);
+    color: rgb(31, 123, 228);
 }
 
 @keyframes fadeIn {

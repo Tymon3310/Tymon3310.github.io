@@ -1,30 +1,49 @@
-<html lang="pl">	
-	<head>
-		<meta charset="utf-8"/>
-		<title>My Website👀</title> 
-		<style>		
-			body {
-				background-color: rgb(24, 200, 212);
-			}
-		</style>
-	</head>
+<!DOCTYPE html>
+<html lang="pl-pl">
+    <head>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <title>Strona www Tymona3310</title>
+        <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+        <meta content="Strona www Tymona3310" property="og:title" />
+    <meta content="Strona główna mojej strony www" property="og:description" />
+    <meta content="images/logo.jpg" property="og:image" />
+    <meta content="#ff392b" data-react-helmet="true" name="theme-color" />
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title" class="title">Moja strona</h1>
+        <div id="content" class="content">
+            <div id="opis">
+                <h3 id="opis_title" class="opis_title">Witaj</h3>
+                <p id="opis_text" class="opis_text">Na mojej stronie www tworzoną prze zemnie. Mój nick to <b><span id="tworca" class="tworca">Tymon3310</span></b>. Poniżej znajdują sie moje projekty. Cieszę się, że tutaj jesteś!</p>
+            </div>
+            <div id="Omnie" class="Omnie">
+                <h3 id="Omnie_title" class="Omnie_title">O mnie</h3>
+                <p id="Omnie_text" class="Omnie_text">Nazywam sie Tymon. Jestem technikiem informatykiem i uczę sie programować. </p>
+                <p>Głównie eksperymentuje z różnymi aplikacjami i systemami. Do wirtualnych maszyn używam Vmware Workstation 17 PRO. </p>
+                <p>Obecnie używam Windowsa 11 w wersji developerskiej i Kubuntu 22.10.</p>
+                <p></p>
+            </div>
+            <div id="Projekty" class="Projekty">
+                <h3 id="Projekty_title" class="Projekty_title">Moje projekty:</h3>
+                <p id="Projekty_text" class="Projekty_text">▶ Ta strona. Serio - to mój pierwszy projekt związany z css. </p>
+                <p>▷ <a href=Systemy/index.html style="color: rgb(216, 221, 214);" target="_blank"> Strona o systemach operacyjnych</a> - moja pierwsza poważna strona www w html.</p>
+                <p>▶ Moje inne małe skrypty w bach-u i shell-u. Używam ich do teraz.</p>
+                <p>▷ Projekty w IFTTT (If This Then That) - Automatyzacje do smart home-u np. głosowe wyłączenie komputera.</p>
+            </div>
+            <a href="https://discord.gg/dQJzPEa" target="_blank" class="content_discordBtn">Mój serwer Discord</a>
+        </div>
+        <p id="creator" class="creator">Strona stworzona przez <b>Tymon3310</b></p>
+    </body>
 
-	<body>
-		<p style="font-size: 1px;">Easter egg</p>
-		<h1 style="background-color:DodgerBlue;color:rgb(23, 102, 91);border:2px solid Tomato;">Strona Główna</h1>
-		<h6>Strona Główna</h6>
-		<a>Witaj na mojej stonie www </a>
-		<p>Pod spodem znajdziesz linki do moich projektów</p>
-		<p>Mam nadzieję, że sie wam spodobają.</p>
-		<p>Moje projekty:</p>
-		<br>
-		<ul>
-		<li>Strona o systemach operacyjnych</li>
-		<br>
-		<a style="color: rgb(79, 192, 45);" href=Systemy/index.html><img src="OS.png" width="280" height="200" title="Strona o Systemach"> </a>
-		<br>
-		</ul>
-		
-		
-	</body>
-</html> 
+    <script>
+        window.onload = (event) => {
+         const resizeOps = () => {
+    document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+  };
+
+  resizeOps();
+  window.addEventListener("resize", resizeOps);
+};
+    </script>
+</html>
