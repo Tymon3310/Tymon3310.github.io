@@ -134,3 +134,13 @@ body {
     to {background-color: white;}
   }
   */
+  .bottom {
+    position: fixed;
+    bottom: 0;
+    font-size: 10px;
+    text-align: left;
+  }
+
+  #hahoos{
+    font-size: 7px;
+  }
