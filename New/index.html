@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl-pl">
+    <head>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <title>Strona www Tymona3310</title>
+        <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+        <meta content="Strona www Tymona3310" property="og:title" />
+    <meta content="Strona główna mojej strony www" property="og:description" />
+    <meta content="images/logo.jpg" property="og:image" />
+    <meta content="#ff392b" data-react-helmet="true" name="theme-color" />
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title" class="title">Moja strona</h1>
+        <div id="content" class="content">
+            <div id="opis">
+                <h3 id="opis_title" class="opis_title">Witaj</h3>
+                <p id="opis_text" class="opis_text">Na mojej stronie www tworzoną przezemnie. Mój nick to <b><span id="tworca" class="tworca">Tymon3310</span></b>. Poniżej znajdują sie moje projekty. Cieszę się, że tutaj jesteś!</p>
+            </div>
+            <div id="Omnie" class="Omnie">
+                <h3 id="Omnie_title" class="Omnie_title">O mnie</h3>
+                <p id="Omnie_text" class="Omnie_text">Nazywam sie Tymon. Jestem techikem informatykem i ucze sie programować. </p>
+                <p>Głównie eksperymentuje z różnymi aplikacjami i systemami. Do wirtualnych maszyn użwyam Vmvare Workstaion 17 PRO. </p>
+                <p>Obecnie użymam Windowsa 11 w wersji developerskej i kubuntu 22.10.</p>
+                <p></p>
+            </div>
+            <div id="Projekty" class="Projekty">
+                <h3 id="Projekty_title" class="Projekty_title">Moje projekty</h3>
+                <p id="Projekty_text" class="Projekty_text">Nazywam sie Tymon. Jestem techikem informatykem i ucze sie programować. </p>
+                <p>Głównie eksperymentuje z różnymi aplikacjami i systemami. Do wirtualnych maszyn użwyam Vmvare Workstaion 17 PRO. </p>
+                <p>Obecnie użymam Windowsa 11 w wersji developerskej i kubuntu 22.10.</p>
+                <p></p>
+            </div>
+            <a href="https://discord.gg/dQJzPEa" target="_blank" class="content_discordBtn">Mój serwer Discord</a>
+        </div>
+        <p id="copyright" class="copyright">Copyright © <script>document.write(/\d{4}/.exec(Date())[0])</script> Polska Placówka | Wszystkie prawa zastrzeżone.</p>
+            <p id="creator" class="creator">Strona stworzona przez <b>Tymon3310</b></p>
+    </body>
+
+    <script>
+        window.onload = (event) => {
+         const resizeOps = () => {
+    document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+  };
+
+  resizeOps();
+  window.addEventListener("resize", resizeOps);
+};
+    </script>
+</html>
