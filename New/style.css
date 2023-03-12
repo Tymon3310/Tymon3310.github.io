@@ -39,6 +39,11 @@ body {
     padding: 10px;
 }
 
+.dark-mode {
+  background-color: rgba(255, 255, 255, 0.836);
+  color: rgb(65, 64, 64);
+}
+
 .content_text {
     font-size: 15px;
 }
