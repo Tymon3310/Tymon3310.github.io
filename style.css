@@ -29,6 +29,10 @@ body {
     }
   }
 
+.secret{
+color: rgb(65, 64, 64);
+}
+
 .content{
     background-color: rgb(65, 64, 64);
     border-radius: 35px;

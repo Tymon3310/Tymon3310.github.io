@@ -1,3 +1,12 @@
+window.onload = (event) => {
+  const resizeOps = () => {
+document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+};
+
+resizeOps();
+window.addEventListener("resize", resizeOps);
+};
+
 var siteWidth = 1280;
 var scale = screen.width /siteWidth;
 

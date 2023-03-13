@@ -1,1 +1,1 @@
-Pliki mojej strowy www
+Pliki mojej strony www
