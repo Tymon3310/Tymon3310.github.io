@@ -31,3 +31,9 @@ function dark() {
   var element = content
   element.classList.toggle("dark-mode");
 }
+
+//langugage
+
+function en(){
+  window.open('/EN', '_self');
+}
