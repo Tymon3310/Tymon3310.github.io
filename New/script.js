@@ -32,8 +32,17 @@ function dark() {
   element.classList.toggle("dark-mode");
 }
 
+function dark2() {
+  var element = content
+  element.classList.toggle("darker-mode");
+}
+
 //langugage
 
 function en(){
-  window.open('/EN', '_self');
+  window.open('EN.html', '_self');
+}
+
+function pl(){
+  window.open('index.html', '_self');
 }
