@@ -19,11 +19,15 @@ media = window.matchMedia("(max-width: 1000px)")
   if (media.matches) {
 mobile.style.display = "none"
 pc.style.display = "block"
- } //else {
-// pc.style.display = "none"
-// mobile.style.display = "block" 
-// }
+ } else {
+pc.style.display = "none"
+mobile.style.display = "block" 
+}
 
-//dark mode switch
+//theme switch
 
 
+function dark() {
+  var element = content
+  element.classList.toggle("dark-mode");
+}
