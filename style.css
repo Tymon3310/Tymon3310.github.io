@@ -69,6 +69,61 @@ color: rgb(65, 64, 64);
     text-align: left;
 }
 
+/* theme */
+.dark-mode {
+  
+  background-color: rgba(255, 255, 255, 0.836);
+  color: rgb(65, 64, 64);
+}
+
+.darkBtn {
+  float: right;
+  display: inline-block;
+  border-radius: 12px;
+  text-decoration: none;
+  background-color: #2a2a2e;
+  color: #fff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-out;
+}
+
+.darkBtn:hover {
+  animation: hoverdrk-in 0.5s ease-in-out;
+  animation-fill-mode:both;
+}
+
+.darkBtn:not(:hover) {
+  animation: hoverdrk-out 0.5s ease-in-out;
+  animation-fill-mode:both;
+}
+
+@keyframes hoverdrk-in {
+  from {
+    background-color: rgb(65, 64, 64);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0.836);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    color: #000000;
+  }
+}
+
+@keyframes hoverdrk-out {
+  from {
+      background-color: rgba(255, 255, 255, 0.836);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    color: #000000;
+  }
+  to {
+      background-color: rgb(65, 64, 64);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
 /* Discord button */ 
 
 .content_discordBtn {
@@ -313,4 +368,61 @@ color: rgb(65, 64, 64);
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     }
   }
+
+/*Wielkość mobile*/
+
+ /* if desktop */
+ .mobile_device_380px {
+  display: none;
+}
+.mobile_device_480px {
+  display: none;
+}
+
+
+/* if mobile device max width 380px */
+@media only screen and (max-device-width: 380px) {
+  .mobile_device_380px{display: block;}       
+  .desktop {display: none;}
+} 
+
+/* if mobile device max width 480px */
+@media only screen and (max-device-width: 480px) {
+ .mobile_device_480px{display: block;}
+ .desktop {display: none;}
+}
+
+
+/* Ten pasek na górze */ 
+
+  body {margin:0;}
+
+  .navbar {
+    overflow: hidden;
+    background-color: rgba(37, 118, 165, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
   
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  .main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px; 
+  }

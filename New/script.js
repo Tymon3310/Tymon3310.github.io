@@ -37,3 +37,7 @@ function dark() {
 function en(){
   window.open('/EN', '_self');
 }
+
+function pl(){
+  window.open('/', '_self');
+}

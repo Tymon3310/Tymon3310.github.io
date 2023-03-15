@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
 
 html{
-    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(0, 162, 255)) no-repeat center center fixed;
-    font-family: "Sofia Sans", sans-serif;
-    -webkit-background-size: cover;
+  background: linear-gradient(135deg, rgb(0, 0, 0), rgb(0, 162, 255)) no-repeat center center fixed;
+  font-family: "Sofia Sans", sans-serif;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -17,7 +17,7 @@ body {
     margin: 0;
     text-align: center;
     animation: fadeIn 3.5s;
-  animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn {
@@ -41,6 +41,33 @@ body {
     margin: auto;
     padding: 10px;
 }
+
+.content_text {
+    font-size: 15px;
+}
+
+.title {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.creator{
+    margin-top: 1px;
+}
+
+.tworca {
+    color: rgb(31, 123, 228);
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    font-size: 10px;
+    text-align: left;
+}
+
 /* theme */
 .dark-mode {
   
@@ -95,32 +122,6 @@ body {
   }
 }
 
-
-.content_text {
-    font-size: 15px;
-}
-
-.title {
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
-.creator{
-    margin-top: 1px;
-}
-
-.tworca {
-    color: rgb(31, 123, 228);
-}
-
-.bottom {
-    position: fixed;
-    bottom: 0;
-    font-size: 10px;
-    text-align: left;
-}
 
 /* Discord button */
 
@@ -368,6 +369,8 @@ body {
     }
   }
   
+  /*Wielkość mobile*/
+
  /* if desktop */
  .mobile_device_380px {
   display: none;
@@ -389,6 +392,7 @@ body {
  .desktop {display: none;}
 }
 
+
 body {margin:0;}
 
 .navbar {
@@ -398,6 +402,8 @@ body {margin:0;}
   top: 0;
   width: 100%;
 }
+
+/* ten pasek na górze */
 
 .navbar a {
   float: left;
@@ -417,5 +423,5 @@ body {margin:0;}
 .main {
   padding: 16px;
   margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
+  height: 1500px; 
 }
