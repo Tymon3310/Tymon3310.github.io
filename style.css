@@ -30,7 +30,7 @@ body {
   }
 
 .secret{
-color: rgb(65, 64, 64);
+color: rgba(65, 64, 64, 0);
 }
 
 .content{
