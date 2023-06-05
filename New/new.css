@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.title {
+  text-align: center  
+}
+.content{
+    border-radius: 35px;
+    color:rgb(255, 255, 255);
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Discord button */
+
+.content_discordBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0004ff;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-out;
+}
+
+.content_discordBtn:hover {
+  animation: hoverdc-in 0.5s ease-in-out;
+  animation-fill-mode:both;
+}
+
+.content_discordBtn:not(:hover) {
+  animation: hoverdc-out 0.5s ease-in-out;
+  animation-fill-mode:both;
+}
+
+@keyframes hoverdc-in {
+  from {
+    background-color: #5865F2;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    background-color: #0264cc;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes hoverdc-out {
+  from {
+      background-color: #0264cc;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+  to {
+      background-color: #5865F2;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Youtube button */ 
+
+.content_YouTubeBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff0000;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-out;
+}
+
+.content_YouTubeBtn:hover {
+  animation: hoveryt-in 0.5s ease-in-out;
+  animation-fill-mode:both;
+}
+
+.content_YouTubeBtn:not(:hover) {
+  animation: hoveryt-out 0.5s ease-in-out;
+  animation-fill-mode:both;
+}
+
+@keyframes hoveryt-in {
+  from {
+    background-color: #FF0000;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    background-color: #cc0202;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes hoveryt-out {
+  from {
+      background-color: #cc0202;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+  to {
+      background-color: #FF0000;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+/* Twitter button */
+
+.content_TwitterBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1DA1F2;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-out;
+}
+
+.content_TwitterBtn:hover {
+  animation: hovertw-in 0.5s ease-in-out;
+  animation-fill-mode:both;
+}
+
+.content_TwitterBtn:not(:hover) {
+  animation: hovertw-out 0.5s ease-in-out;
+  animation-fill-mode:both;
+}
+
+@keyframes hovertw-in {
+  from {
+    background-color: #1DA1F2;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    background-color: #1d60f2;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes hovertw-out {
+  from {
+      background-color: #1d60f2;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+  to {
+      background-color: #1DA1F2;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Twitch Button */
+
+.content_TwitchBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #6441A4;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-out;
+}
+
+.content_TwitchBtn:hover {
+  animation: hovertv-in 0.5s ease-in-out;
+  animation-fill-mode:both;
+}
+
+.content_TwitchBtn:not(:hover) {
+  animation: hovertv-out 0.5s ease-in-out;
+  animation-fill-mode:both;
+}
+
+@keyframes hovertv-in {
+  from {
+    background-color: #6441A4;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    background-color: #5522b4;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes hovertv-out {
+  from {
+      background-color: #5522b4;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+  to {
+      background-color: #6441A4;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Github button */
+
+.content_GithubBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #171515;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-out;
+}
+
+.content_GithubBtn:hover {
+  animation: hovergit-in 0.5s ease-in-out;
+  animation-fill-mode:both;
+}
+
+.content_GithubBtn:not(:hover) {
+  animation: hovergit-out 0.5s ease-in-out;
+  animation-fill-mode:both;
+}
+
+@keyframes hovergit-in {
+  from {
+    background-color: #171515;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    background-color: #312c2c;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes hovergit-out {
+  from {
+      background-color: #312c2c;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+  to {
+      background-color: #171515;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+}
