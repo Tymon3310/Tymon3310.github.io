@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
 html{
     background: linear-gradient(135deg, rgb(0, 0, 0), rgb(0, 162, 255)) no-repeat center center fixed;
     font-family: "Sofia Sans", sans-serif;
