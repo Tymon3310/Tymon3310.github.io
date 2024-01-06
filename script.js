@@ -1,32 +1,13 @@
-window.onload = (event) => {
-    const resizeOps = () => {
-document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
-};
+// window.onload = (event) => {
+//     const resizeOps = () => {
+// document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+// };
 
-resizeOps();
-window.addEventListener("resize", resizeOps);
-};
+// resizeOps();
+// window.addEventListener("resize", resizeOps);
+// };
 
-// //Zmiana wielkości mobile 
 
-// var siteWidth = 1280;
-// var scale = screen.width /siteWidth;
-
-// document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
-
-// const mobile = document.querySelector(".mobile"),
-// pc = document.querySelector(".computer"),
-// media = window.matchMedia("(max-width: 1000px)")
-
-//   if (media.matches) {
-// mobile.style.display = "none"
-// pc.style.display = "block"
-//  } else {
-// pc.style.display = "none"
-// mobile.style.display = "block" 
-// }
-
-//theme switch
 
 
 function dark() {
@@ -43,3 +24,12 @@ function en(){
 function pl(){
   window.open('/', '_self');
 }
+// make a dark mode switch code for the website
+
+// function dark() {
+//   var element = document.body;
+//   element.classList.toggle("dark-mode");
+// }
+
+
+

@@ -34,7 +34,7 @@ color: rgba(65, 64, 64, 0);
 }
 
 /* wielkość mobile */
-@media (max-width: 600px) { 
+@media (max-width: 700px) { 
   .content{
     background-color: rgb(65, 64, 64);
     border-radius: 35px;
@@ -44,9 +44,21 @@ color: rgba(65, 64, 64, 0);
     margin: auto;
     padding: 10px;
 }
+.bottom {
+  position: bottom;
+  bottom: 0;
+  font-size: 15px;
+  text-align: left;
+  background-color: rgb(65, 64, 64);
+  border-radius: 35px;
+  color:rgb(255, 255, 255);
+  width: 75%;
+  margin: auto;
+  padding: 10px;
+}
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .content{
     background-color: rgb(65, 64, 64);
     border-radius: 35px;
@@ -56,7 +68,20 @@ color: rgba(65, 64, 64, 0);
     margin: auto;
     padding: 10px;
 }
+.bottom {
+  position: fixed;
+  bottom: 0;
+  font-size: 10px;
+  text-align: left;
+  background-color: rgb(65, 64, 64);
+  border-radius: 35px;
+  color:rgb(255, 255, 255);
+  width: 12%;
+  margin: auto;
+  padding: 10px;
 }
+}
+
 /* .content{
     background-color: rgb(65, 64, 64);
     border-radius: 35px;
@@ -86,36 +111,6 @@ color: rgba(65, 64, 64, 0);
     color: rgb(31, 123, 228);
 }
 
-/* wielkość mobile */
-@media (max-width: 600px) { 
-  .bottom {
-    position: bottom;
-    bottom: 0;
-    font-size: 15px;
-    text-align: left;
-    background-color: rgb(65, 64, 64);
-    border-radius: 35px;
-    color:rgb(255, 255, 255);
-    width: 75%;
-    margin: auto;
-    padding: 10px;
-}
-}
-
-@media (min-width: 600px) {
-  .bottom {
-    position: fixed;
-    bottom: 0;
-    font-size: 10px;
-    text-align: left;
-    background-color: rgb(65, 64, 64);
-    border-radius: 35px;
-    color:rgb(255, 255, 255);
-    width: 12%;
-    margin: auto;
-    padding: 10px;
-}
-}
 /* .bottom {
     position: fixed;
     bottom: 0;
