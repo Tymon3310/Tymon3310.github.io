@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+html{
+    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(0, 162, 255)) no-repeat center center fixed;
+    font-family: "Sofia Sans", sans-serif;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    height: calc(var(--vh, 1vh) * 100);
+    background-repeat: no-repeat;
+    font-family: "Sofia Sans", sans-serif;
+    color: white;
+    margin: 0;
+    text-align: center;
+    animation: fadeIn 3.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.secret{
+color: rgba(65, 64, 64, 0);
+}
+
+/* wielkość mobile */
+@media (max-width: 700px) { 
+  .content{
+    background-color: rgb(65, 64, 64);
+    border-radius: 35px;
+    color:rgb(255, 255, 255);
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.bottom {
+  position: bottom;
+  bottom: 0;
+  font-size: 15px;
+  text-align: left;
+  background-color: rgb(65, 64, 64);
+  border-radius: 35px;
+  color:rgb(255, 255, 255);
+  width: 75%;
+  margin: auto;
+  padding: 10px;
+}
+}
+
+@media (min-width: 700px) {
+  .content{
+    background-color: rgb(65, 64, 64);
+    border-radius: 35px;
+    color:rgb(255, 255, 255);
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.bottom {
+  position: fixed;
+  bottom: 0;
+  font-size: 10px;
+  text-align: left;
+  background-color: rgb(65, 64, 64);
+  border-radius: 35px;
+  color:rgb(255, 255, 255);
+  width: 12%;
+  margin: auto;
+  padding: 10px;
+}
+}
+
+/* .content{
+    background-color: rgb(65, 64, 64);
+    border-radius: 35px;
+    color:rgb(255, 255, 255);
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+} */
+
+.content_text {
+    font-size: 15px;
+}
+
+.title {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.creator{
+    margin-top: 1px;
+}
+
+.tworca {
+    color: rgb(31, 123, 228);
+}
+
+/* .bottom {
+    position: fixed;
+    bottom: 0;
+    font-size: 10px;
+    text-align: left;
+    background-color: rgb(65, 64, 64);
+    border-radius: 35px;
+    color:rgb(255, 255, 255);
+    width: 12%;
+    margin: auto;
+    padding: 10px;
+} */
+
+/* theme */
+.dark-mode {
+  
+  background-color: rgba(255, 255, 255, 0.836);
+  color: rgb(65, 64, 64);
+}
+
+.darkBtn {
+  float: right;
+  display: inline-block;
+  border-radius: 12px;
+  text-decoration: none;
+  background-color: #2a2a2e;
+  color: #fff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-out;
+}
+
+.darkBtn:hover {
+  animation: hoverdrk-in 0.5s ease-in-out;
+  animation-fill-mode:both;
+}
+
+.darkBtn:not(:hover) {
+  animation: hoverdrk-out 0.5s ease-in-out;
+  animation-fill-mode:both;
+}
+
+@keyframes hoverdrk-in {
+  from {
+    background-color: rgb(65, 64, 64);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0.836);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    color: #000000;
+  }
+}
+
+@keyframes hoverdrk-out {
+  from {
+      background-color: rgba(255, 255, 255, 0.836);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    color: #000000;
+  }
+  to {
+      background-color: rgb(65, 64, 64);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+/* Discord button */ 
+
+.content_discordBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0004ff;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-out;
+  }
+  
+  .content_discordBtn:hover {
+    animation: hoverdc-in 0.5s ease-in-out;
+    animation-fill-mode:both;
+  }
+
+  .content_discordBtn:not(:hover) {
+    animation: hoverdc-out 0.5s ease-in-out;
+    animation-fill-mode:both;
+  }
+  
+  @keyframes hoverdc-in {
+    from {
+      background-color: #5865F2;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    to {
+      background-color: #0264cc;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-3px);
+    }
+  }
+
+  @keyframes hoverdc-out {
+    from {
+        background-color: #0264cc;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-3px);
+    }
+    to {
+        background-color: #5865F2;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+/* Youtube button */
+  
+  .content_YouTubeBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff0000;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-out;
+  }
+  
+  .content_YouTubeBtn:hover {
+    animation: hoveryt-in 0.5s ease-in-out;
+    animation-fill-mode:both;
+  }
+
+  .content_YouTubeBtn:not(:hover) {
+    animation: hoveryt-out 0.5s ease-in-out;
+    animation-fill-mode:both;
+  }
+
+  @keyframes hoveryt-in {
+    from {
+      background-color: #FF0000;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    to {
+      background-color: #cc0202;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-3px);
+    }
+  }
+
+  @keyframes hoveryt-out {
+    from {
+        background-color: #cc0202;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-3px);
+    }
+    to {
+        background-color: #FF0000;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+/* Twitter button */
+
+  .content_TwitterBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000000;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-out;
+  }
+  
+  .content_TwitterBtn:hover {
+    animation: hovertw-in 0.5s ease-in-out;
+    animation-fill-mode:both;
+  }
+
+  .content_TwitterBtn:not(:hover) {
+    animation: hovertw-out 0.5s ease-in-out;
+    animation-fill-mode:both;
+  }
+
+  @keyframes hovertw-in {
+    from {
+      background-color: #000000;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    to {
+      background-color: #262626;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-3px);
+    }
+  }
+
+  @keyframes hovertw-out {
+    from {
+        background-color: #262626;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-3px);
+    }
+    to {
+        background-color: #000000;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+/* Twitch Button */
+
+  .content_TwitchBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6441A4;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-out;
+  }
+  
+  .content_TwitchBtn:hover {
+    animation: hovertv-in 0.5s ease-in-out;
+    animation-fill-mode:both;
+  }
+
+  .content_TwitchBtn:not(:hover) {
+    animation: hovertv-out 0.5s ease-in-out;
+    animation-fill-mode:both;
+  }
+
+  @keyframes hovertv-in {
+    from {
+      background-color: #6441A4;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    to {
+      background-color: #5522b4;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-3px);
+    }
+  }
+
+  @keyframes hovertv-out {
+    from {
+        background-color: #5522b4;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-3px);
+    }
+    to {
+        background-color: #6441A4;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+/* Github button */
+
+  .content_GithubBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #171515;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-out;
+  }
+  
+  .content_GithubBtn:hover {
+    animation: hovergit-in 0.5s ease-in-out;
+    animation-fill-mode:both;
+  }
+
+  .content_GithubBtn:not(:hover) {
+    animation: hovergit-out 0.5s ease-in-out;
+    animation-fill-mode:both;
+  }
+
+  @keyframes hovergit-in {
+    from {
+      background-color: #171515;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    to {
+      background-color: #312c2c;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-3px);
+    }
+  }
+
+  @keyframes hovergit-out {
+    from {
+        background-color: #312c2c;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-3px);
+    }
+    to {
+        background-color: #171515;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+
+/* Ten pasek na górze */ 
+
+  body {margin:0;}
+
+  .navbar {
+    overflow: hidden;
+    background-color: rgba(37, 118, 165, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  .main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px; 
+  }
