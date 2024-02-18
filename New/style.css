@@ -76,7 +76,7 @@ body {
 }
 
 .darkBtn {
-  float: right;
+  /* float: right; */
   display: inline-block;
   border-radius: 12px;
   text-decoration: none;
