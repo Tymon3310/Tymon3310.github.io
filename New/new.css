@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
 
+html{
+  background: linear-gradient(135deg, rgb(0, 0, 0), rgb(0, 162, 255)) no-repeat center center fixed !important; 
+  font-family: "Sofia Sans", sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    height: calc(var(--vh, 1vh) * 100);
+    background-repeat: no-repeat;
+    font-family: "Sofia Sans", sans-serif;
+    color: white;
+    margin: 0;
+    text-align: center;
+    animation: fadeIn 3.5s;
+    animation-fill-mode: forwards;
+}
 
 @keyframes fadeIn {
     from {

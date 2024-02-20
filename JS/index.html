@@ -11,7 +11,8 @@
         <meta content="Strona główna mojej strony www" property="og:description" />
         <meta content="images/logo.jpg" property="og:image" />
         <meta content="#ff392b" data-react-helmet="true" name="theme-color" />
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://tymon3310.github.io/style.css">  <!-- backup css -->
+        <link rel="stylesheet" href="/style.css">
         <script type="text/javascript" src="script.js"></script>
         <meta name="keywords" content="Tymon3310, Tymon Kopczyński" />
         <script src="https://www.w3schools.com/js/myScript.js"></script>
@@ -26,26 +27,27 @@
             <div id="Opis">
                 <h3 id="opis_title" class="opis_title">JS</h3>
                 <p id="opis_text" class="opis_text">Na mojej stronie www tworzoną przeze mnie.</p>
-                <buton id="opis_button" class="opis_button" onclick="document.getElementById('opis_text')">Zmień opis</button>
+                <button id="opis_button" class="opis_button" onclick="document.getElementById('opis_text').innerHTML='Hi JS!!'">Zmień opis</button>
+                
             </div>
-        </div>
+        <!-- </div> -->
         <br>
-        <div class="content">
-            <p id="aa"></p>
+        <!-- <div id="content" class="content"> -->
+           <div id="js" class="js">
+            <p id="aa">nie dzaiała :(</p>
             <p id="demo">aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            <button id="a" onclick="document.getElementById('content').style.backgroundColor='gray'; document.getElementById('a').style.display = 'none'; document.getElementById('b').style.display = 'block' ">dark mode</button>
+            <button id="a" onclick="document.getElementById('content').style.backgroundColor='black'; document.getElementById('a').style.display = 'none'; document.getElementById('b').style.display = 'block' ">dark mode</button>
             <button id="b" onclick="document.getElementById('content').style.backgroundColor='white' ; document.getElementById('b').style.display = 'none' ; document.getElementById('a').style.display = 'block'">white mode</button>
             <button id="11" onclick="document.getElementById('win').src='win11.png' ; document.getElementById('11').style.display = 'none' ; document.getElementById('10').style.display = 'block'">update</button>
             <button id="10" onclick="document.getElementById('win').src='win10.png' ; document.getElementById('10').style.display = 'none' ; document.getElementById('11').style.display = 'block'">downgrade</button>
+            <button id="modebtn" onclick="toggleMode()">Toggle Mode</button>
+            <button id="winbtn" onclick="toggleImage()">Toggle Image</button>
             <button onclick="myFunction()">aaa</button>
             <button onclick="abc()">psuj</button>
             <p>
             <img src="win10.png" id="win" style="width: 150px;">
             </p> 
-            <script>
-                document.getElementById('aa').innerHTML = "hello js";
-                // document.write("<p>coś</p> <p>coś2</p>");
-            </script>
+           </div>
 		</div>
        <br>
         <div class="bottom">
