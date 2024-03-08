@@ -1,4 +1,3 @@
-"use strict";
 //langugage
 function en() {
     window.location.href = '/EN';
