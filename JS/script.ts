@@ -25,6 +25,7 @@ window.onload = function() {
     let pot = 5**3;
     console.log(pot);
 }
+
 function broke() {
     const body = document.getElementById('body') as HTMLElement;
     if (body) {

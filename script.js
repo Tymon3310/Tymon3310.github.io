@@ -25,5 +25,5 @@ function displayTime() {
         timeElement.innerText = timeString;
     }
 }
-// Run the function every minute
+// Run the function every half minute
 setInterval(displayTime, 30000);
