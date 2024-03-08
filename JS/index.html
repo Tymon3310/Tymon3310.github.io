@@ -11,8 +11,8 @@
         <meta content="Strona główna mojej strony www" property="og:description" />
         <meta content="images/logo.jpg" property="og:image" />
         <meta content="#ff392b" data-react-helmet="true" name="theme-color" />
-        <link rel="stylesheet" href="https://tymon3310.github.io/style.css">  <!-- backup css -->
-        <link rel="stylesheet" href="/style.css">
+        <!-- <link rel="stylesheet" href="https://tymon3310.github.io/style.css">  backup css -->
+        <link rel="stylesheet" href="../style.css">
         <script src="script.js"></script>
         <meta name="keywords" content="Tymon3310, Tymon Kopczyński" />
         <script src="https://www.w3schools.com/js/myScript.js"></script>
@@ -27,19 +27,36 @@
             <div id="Opis">
                 <h3 id="opis_title" class="opis_title">JS</h3>
                 <p id="opis_text" class="opis_text">Na mojej stronie www tworzoną przeze mnie.</p>
+            </div>
+            <div id="js" class="js">
                 <button id="opis_button" class="opis_button" onclick="document.getElementById('opis_text').innerHTML='Hi JS!!'">Zmień opis</button>
-                
+                <p id="wyn">Nie obliczono</p>
+                <p id="pi">bez błędów</p>
+            
+                <input type="number" id="liczbaA">
+                <input type="number" id="liczbaB"/>
+                <BR>
+                <A>Wynik:</A>
+                <label id="wyni">nie</label> 
+                <button onclick=dod()>Dodaj</button>
+                <button onclick=odj()>Odejmi</button>
+                <button onclick=mnz()>Mnóż</button>
+                <button onclick=dze()>Dziel</button>
+                <br>
+                <br>
+                <button onclick=old()>Czy możesz isć dalej?</button>
+                <a id="wiek">Zobacz</a>
+
             </div>
         <!-- </div> -->
         <br>
-        <!-- <div id="content" class="content"> -->
            <div id="js" class="js">
             <p id="aa">nie dzaiała :(</p>
             <p id="demo">aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            <button id="a" onclick="document.getElementById('content').style.backgroundColor='black'; document.getElementById('a').style.display = 'none'; document.getElementById('b').style.display = 'block' ">dark mode</button>
+            <!-- <button id="a" onclick="document.getElementById('content').style.backgroundColor='black'; document.getElementById('a').style.display = 'none'; document.getElementById('b').style.display = 'block' ">dark mode</button>
             <button id="b" onclick="document.getElementById('content').style.backgroundColor='white' ; document.getElementById('b').style.display = 'none' ; document.getElementById('a').style.display = 'block'">white mode</button>
             <button id="11" onclick="document.getElementById('win').src='win11.png' ; document.getElementById('11').style.display = 'none' ; document.getElementById('10').style.display = 'block'">update</button>
-            <button id="10" onclick="document.getElementById('win').src='win10.png' ; document.getElementById('10').style.display = 'none' ; document.getElementById('11').style.display = 'block'">downgrade</button>
+            <button id="10" onclick="document.getElementById('win').src='win10.png' ; document.getElementById('10').style.display = 'none' ; document.getElementById('11').style.display = 'block'">downgrade</button> -->
             <button id="modebtn" onclick="mode()">Toggle Mode</button>
             <button id="winbtn" onclick="image()">Toggle Image</button>
             <button onclick="myFunction()">aaa</button>
@@ -54,5 +71,8 @@
 			<p>Strona stworzona przez <b>Tymon3310</b></p>
 			<p>Copyright © 2024 Tymon3310 | Wszelkie prawa zastrzeżone</p>
 		</div>
+        <script>
+            
+        </script>
     </body>
 </html>
