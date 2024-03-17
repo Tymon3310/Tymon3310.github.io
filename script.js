@@ -17,6 +17,10 @@ function light() {
 }
 function displayTime() {
     console.log("time updated");
+    const options = { timeZone: "Europe/Warsaw", hour: "2-digit", minute: "2-digit", hour12: false };
+    const event = new Date();
+    const timeString = event.toLocaleTimeString('pl-PL', options);
+    const timeElement = document.getElementById('time');
     var options = { timeZone: "Europe/Warsaw", hour: "2-digit", minute: "2-digit", hour12: false };
     var event = new Date();
     var timeString = event.toLocaleTimeString('pl-PL', options);
@@ -25,5 +29,6 @@ function displayTime() {
         timeElement.innerText = timeString;
     }
 }
+// Run the function every minute
 // Run the function every half minute
 setInterval(displayTime, 30000);
