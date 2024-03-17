@@ -21,9 +21,14 @@ function displayTime() {
     const event = new Date();
     const timeString = event.toLocaleTimeString('pl-PL', options);
     const timeElement = document.getElementById('time');
+    var options = { timeZone: "Europe/Warsaw", hour: "2-digit", minute: "2-digit", hour12: false };
+    var event = new Date();
+    var timeString = event.toLocaleTimeString('pl-PL', options);
+    var timeElement = document.getElementById('time');
     if (timeElement !== null) {
         timeElement.innerText = timeString;
     }
 }
 // Run the function every minute
+// Run the function every half minute
 setInterval(displayTime, 30000);
