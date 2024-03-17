@@ -75,7 +75,7 @@ color: rgba(65, 64, 64, 0);
   background-color: rgb(65, 64, 64);
   border-radius: 35px;
   color:rgb(255, 255, 255);
-  width: 12%;
+  width: 15%;
   margin: auto;
   padding: 10px;
 }
@@ -129,11 +129,11 @@ color: rgba(65, 64, 64, 0);
 } */
 
 /* theme */
-.dark-mode {
+/* .dark-mode {
   
   background-color: rgba(255, 255, 255, 0.836);
   color: rgb(65, 64, 64);
-}
+} */
 
 .darkBtn {
   /* float: right; */
