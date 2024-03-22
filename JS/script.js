@@ -41,11 +41,12 @@ console.log(pi);
     console.log(typeof stri);
 }
 {
-    let BitA = 192; //binarny
-    let BitB = 255;
+    let BitA = 0b0010; // binary
+    let BitB = 0b0001;
     let BitC = BitA & BitB;
     console.log(BitC.toString(2));
     console.log(BitA & BitB);
+    console.log("Binarny");
 }
 // }
 function broke() {
