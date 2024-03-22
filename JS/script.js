@@ -140,3 +140,28 @@ function zmLocal() {
 zmLocal();
 let xxx = 10; //zmienna globalna
 console.log(xxx);
+const auto = {
+    marka: "Oplel",
+    model: "Astra",
+    silnk: 1.6,
+    paliwo: "disel",
+    kolor: "czarny",
+    rocznik: "2002",
+    markaModel: function () {
+        return "Marka samochodu to: " + this.marka + ", a model to: " + this.model;
+    },
+    cnsp: function () {
+        console.log(this.markaModel());
+    },
+};
+console.log(auto.markaModel());
+auto.cnsp();
+function zmn() {
+    document.getElementById("najed").innerHTML = "<img src='win11.png' id='najed'>";
+}
+function zmn_p() {
+    const p = document.getElementById('najedz');
+    const img = document.createElement('img');
+    img.src = 'win11.png';
+    p.parentNode.replaceChild(img, p);
+}
