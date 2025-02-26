@@ -3,101 +3,174 @@
 
 <head>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-    <title>Tymon3310's website</title>
     <meta charset="UTF-8">
+    <meta name="description" content="Tymon3310's personal website - projects, achievements and personal information">
+    <title>Tymon3310's website</title>
     <link rel="icon" type="image/x-icon" href="/assets/awatar.gif">
     <meta content="Tymon3310's website" property="og:title" />
     <meta content="Tymon3310's English website" property="og:description" />
-    <meta content="images/logo.jpg" property="og:image" />
+    <meta content="/assets/awatar.png" property="og:image" />
     <meta content="#ff392b" data-react-helmet="true" name="theme-color" />
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <meta name="keywords" content="Tymon3310, Tymon Kopczyński, programming, html, css, js" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-    <br>
-    <br>
-    <h1 id="title" class="title">My website(EN)</h1>
-    <a href="#" onclick="light()" style="color: white;">Change theme</a>
-    <div id="content" class="content">
-        <div id="opis">
-            <h3 id="opis_title" class="opis_title">Welcome</h3>
-            <p id="opis_text" class="opis_text">It is very nice to see you on my website fully made by me. </p>
-            <p> My nickname is <b><span id="tworca" class="tworca">Tymon3310</span></b>. Below you can see my projects.
-                I'm glad that you are here!</p>
-        </div>
-        <div id="Omnie" class="Omnie">
-            <h3 id="Omnie_title" class="Omnie_title">About me</h3>
-            <p id="Omnie_text" class="Omnie_text">My name is Tymon. I'm learning to be a IT specialist and coding. </p>
-            <p>I'm mainly experimenting with random applications and systems. For virtual machines I use Vmware
-                Workstation 17 PRO. </p>
-            <p>Right now i'm using Windows 11 dev and Arch<i style="font-size: 0.5px;">(btw) with Hyprland</i>.</p>
-            <p>My local time is: <i id="time">cant load time</i></p>
-            <p></p>
-        </div>
-    </div>
-    <br>
-    <div id="content" class="content">
-        <div id="Projekty" class="Projekty">
-            <h3 id="Projekty_title" class="Projekty_title">My projects:</h3>
-            <p id="Projekty_text" class="Projekty_text"><i class="material-icons"
-                    style="font-size: 14px;">arrow_forward_ios</i> This website. - This's my first project with css.
-            </p>
-            <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> <a href=Systemy/index.html
-                    style="color: rgb(216, 221, 214);" target="_blank"> Website about OS (PL)</a> - my first website
-                (without css).</p>
-            <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> My scripts in bach and shell -
-                I'm using them to this day.</p>
-            <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> Projects in IFTTT (If This Then
-                That) - Automatization for smart home for example voice turing off my pc.</p>
-        </div>
-        <div id="Osiagniencia" class="Osiagniencia">
-            <h3 id="Osiagniencia_title" class="Osiagniencia_title">My achievements:</h3>
-            <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> I deleted Microsoft Edge</p>
-            <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> Home assistant - Smart home
-                server hosted on raspberry pi 4. It makes possible merging several integrations in to one.</p>
-            <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> This translation - It was made
-                without any translator. </p>
-            <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> I Installed MacOs 14 AMD CPU</p>
-            <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> I use Arch Linux with Hyprland
-        </div>
-        <div id="Przyszłe" class="Przyszłe">
-            <h3 id="Przyszłe_title" class="Przyszłe_title">My plans:</h3>
-            <p id="Przyszłe_text" class="Przyszłe_text"><i class="material-icons"
-                    style="font-size: 14px;">arrow_forward_ios</i> Learn Python or C# </p>
-            <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> Make / port custom rom for my
-                phone</p>
-            <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> Make a game</p>
-            <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> Have Windowsa 12 early</p>
-        </div>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
 
-
-    </div>
-
-    <br>
-    <div id="content" class="content">
-        <div class="socials">
-            <h3 id="socials_title" class="socials_title">Socials</h3>
-            <a href="https://discord.gg/dQJzPEa" target="_blank" class="content_discordBtn">My Discord server(PL)</a>
-            <a href="https://www.youtube.com/@Tymon3310" target="_blank" class="content_YouTubeBtn">My YouTube
-                chanel</a>
-            <a href="https://www.twitch.tv/tymon3310" target="_blank" class="content_TwitchBtn">My Twitch chanel</a>
-            <a href="https://github.com/Tymon3310" target="_blank" class="content_GithubBtn">My GitHub profile</a>
-            <a href="https://twitter.com/Tymon3310" target="_blank" class="content_TwitterBtn">My Twitter</a>
-            <br />
-            <div class="secret">
-                <a>No secret:-O</a>
+    <!-- New responsive navbar -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <div class="menu-icon">
+                <i class="material-icons">menu</i>
+            </div>
+            <div class="logo">Tymon3310</div>
+            <div class="nav-links" id="navLinks">
+                <a href="#About">About me</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Achievements">Achievements</a>
+                <a href="#Future">Plans</a>
+                <a href="#socials">Socials</a>
+                <a href="index.html">PL</a>
+                <a href="#" onclick="light()" aria-label="Change theme">
+                    <i class="material-icons">brightness_medium</i>
+                </a>
             </div>
         </div>
-    </div>
+    </nav>
+
+    <main id="main-content">
+        <h1 id="title" class="title fade-in">My website(EN)</h1>
+        
+        <div id="content" class="content fade-in">
+            <div id="opis">
+                <h3 id="opis_title" class="opis_title">Welcome</h3>
+                <p id="opis_text" class="opis_text">It is very nice to see you on my website fully made by me. </p>
+                <p> My nickname is <b><span id="tworca" class="tworca">Tymon3310</span></b>. Below you can see my projects.
+                    I'm glad that you are here!</p>
+            </div>
+            <div id="Omnie" class="Omnie">
+                <h3 id="Omnie_title" class="Omnie_title">About me</h3>
+                <p id="Omnie_text" class="Omnie_text">My name is Tymon. I'm learning to be a IT specialist and coding. </p>
+                <p>I'm mainly experimenting with random applications and systems. For virtual machines I use Vmware
+                    Workstation 17 PRO. </p>
+                <p>Right now i'm using Windows 11 dev and Arch<i style="font-size: 0.5px;">(btw) with Hyprland</i>.</p>
+                <p>My local time is: <i id="time">cant load time</i></p>
+                <p></p>
+            </div>
+        </div>
+        <br>
+        <div id="content" class="content fade-in">
+            <div id="Projekty" class="Projekty">
+                <h3 id="Projekty_title" class="Projekty_title">My projects:</h3>
+                <p id="Projekty_text" class="Projekty_text"><i class="material-icons"
+                        style="font-size: 14px;">arrow_forward_ios</i> This website. - This's my first project with css.
+                </p>
+                <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> <a href=Systemy/index.html
+                        style="color: rgb(216, 221, 214);" target="_blank"> Website about OS (PL)</a> - my first website
+                    (without css).</p>
+                <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> My scripts in bach and shell -
+                    I'm using them to this day.</p>
+                <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> Projects in IFTTT (If This Then
+                    That) - Automatization for smart home for example voice turing off my pc.</p>
+            </div>
+            <div id="Osiagniencia" class="Osiagniencia">
+                <h3 id="Osiagniencia_title" class="Osiagniencia_title">My achievements:</h3>
+                <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> I deleted Microsoft Edge</p>
+                <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> Home assistant - Smart home
+                    server hosted on raspberry pi 4. It makes possible merging several integrations in to one.</p>
+                <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> This translation - It was made
+                    without any translator. </p>
+                <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> I Installed MacOs 14 AMD CPU</p>
+                <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> I use Arch Linux with Hyprland
+            </div>
+            <div id="Przyszłe" class="Przyszłe">
+                <h3 id="Przyszłe_title" class="Przyszłe_title">My plans:</h3>
+                <p id="Przyszłe_text" class="Przyszłe_text"><i class="material-icons"
+                        style="font-size: 14px;">arrow_forward_ios</i> Learn Python or C# </p>
+                <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> Make / port custom rom for my
+                    phone</p>
+                <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> Make a game</p>
+                <p><i class="material-icons" style="font-size: 14px;">arrow_forward_ios</i> Have Windows 12 early</p>
+            </div>
+        </div>
+
+        <br>
+        <div id="content" class="content fade-in">
+            <div class="socials" id="socials">
+                <h3 id="socials_title" class="socials_title">Socials</h3>
+                <a href="https://discord.gg/dQJzPEa" target="_blank" class="content_discordBtn">My Discord server(PL)</a>
+                <a href="https://www.youtube.com/@Tymon3310" target="_blank" class="content_YouTubeBtn">My YouTube channel</a>
+                <a href="https://www.twitch.tv/tymon3310" target="_blank" class="content_TwitchBtn">My Twitch channel</a>
+                <a href="https://github.com/Tymon3310" target="_blank" class="content_GithubBtn">My GitHub profile</a>
+                <a href="https://twitter.com/Tymon3310" target="_blank" class="content_TwitterBtn">My Twitter</a>
+                <a href="https://bsky.app/profile/tymon3310.bsky.social" target="_blank" class="content_BlueskyBtn">My Bluesky</a>
+                <br />
+                <div class="secret">
+                    <a>No secret:-O</a>
+                </div>
+            </div>
+        </div>
+        <br>
+    </main>
+
+    <!-- Back to top button -->
+    <button onclick="topFunction()" id="backToTop" class="back-to-top" title="Go to top">
+        <i class="material-icons">arrow_upward</i>
+    </button>
 
     <div class="bottom">
-        <a href="/" style="color: white;">Wersja po polsku</a>
+        <a href="/" style="color: white;">Polish version</a>
         <p>Website made by <b>Tymon3310</b></p>
-        <p>Copyright © 2024 Tymon310 | All rights reserved</p>
+        <p>Copyright © 2025 Tymon3310 | All rights reserved</p>
     </div>
-    <br>
+
+    <script>
+        // Scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Back to top button functionality
+            const backToTopButton = document.getElementById('backToTop');
+            
+            window.onscroll = function() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTopButton.style.display = 'block';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            };
+        });
+        
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        
+        // Fix for mobile viewport height (100vh issue on mobile)
+        function setVh() {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        
+        window.addEventListener('resize', setVh);
+        setVh();
+    </script>
 </body>
 
 </html>
