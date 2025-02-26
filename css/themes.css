@@ -1,0 +1,116 @@
+/* Button colors */
+:root {
+  --discord-color: #5865F2;
+  --discord-hover: #0264cc;
+  --youtube-color: #FF0000;
+  --youtube-hover: #cc0202;
+  --twitter-color: #000000;
+  --twitter-hover: #262626;
+  --twitch-color: #6441A4;
+  --twitch-hover: #5522b4;
+  --github-color: #171515;
+  --github-hover: #312c2c;
+  --bluesky-color: #0560FF;
+  --bluesky-hover: #0347c4;
+}
+
+/* Theme styles */
+.light-mode {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Light mode updates */
+.light-mode ~ #navbar, 
+body:has(.light-mode) #navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode ~ #navbar a, 
+body:has(.light-mode) #navbar a,
+.light-mode ~ #navbar .logo, 
+body:has(.light-mode) #navbar .logo {
+  color: #333;
+}
+
+.light-mode ~ #navbar a:hover, 
+body:has(.light-mode) #navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Light mode mobile menu specific styles */
+@media (max-width: 700px) {
+  .light-mode ~ #navbar .nav-links,
+  body:has(.light-mode) #navbar .nav-links {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  
+  .light-mode ~ #navbar .nav-links a,
+  body:has(.light-mode) #navbar .nav-links a {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .light-mode ~ #navbar .nav-links a:hover,
+  body:has(.light-mode) #navbar .nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Social button themes */
+.content_discordBtn {
+  --base-color: var(--discord-color);
+  --hover-color: var(--discord-hover);
+  background-color: var(--base-color);
+}
+
+.content_YouTubeBtn {
+  --base-color: var(--youtube-color);
+  --hover-color: var(--youtube-hover);
+  background-color: var(--base-color);
+}
+
+.content_TwitterBtn {
+  --base-color: var(--twitter-color);
+  --hover-color: var(--twitter-hover);
+  background-color: var(--base-color);
+}
+
+.content_TwitchBtn {
+  --base-color: var(--twitch-color);
+  --hover-color: var(--twitch-hover);
+  background-color: var(--base-color);
+}
+
+.content_GithubBtn {
+  --base-color: var(--github-color);
+  --hover-color: var(--github-hover);
+  background-color: var(--base-color);
+}
+
+.content_BlueskyBtn {
+  --base-color: var(--bluesky-color);
+  --hover-color: var(--bluesky-hover);
+  background-color: var(--base-color);
+}
+
+/* Button hover states */
+.content_discordBtn:hover,
+.content_YouTubeBtn:hover,
+.content_TwitterBtn:hover,
+.content_TwitchBtn:hover,
+.content_GithubBtn:hover,
+.content_BlueskyBtn:hover {
+  animation: button-hover var(--animation-time) ease-in-out forwards;
+}
+
+.content_discordBtn:not(:hover),
+.content_YouTubeBtn:not(:hover),
+.content_TwitterBtn:not(:hover),
+.content_TwitchBtn:not(:hover),
+.content_GithubBtn:not(:hover),
+.content_BlueskyBtn:not(:hover) {
+  animation: button-out var(--animation-time) ease-in-out forwards;
+}
