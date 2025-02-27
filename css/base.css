@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;700&display=swap');
 
 :root {
   /* Color variables */
   --bg-gradient-from: rgb(0, 0, 0);
   --bg-gradient-to: rgb(0, 162, 255);
   --text-color: white;
-  --content-bg: rgb(65, 64, 64);
+  --content-bg: rgba(65, 64, 64, 0.8);
   --link-color: rgb(31, 123, 228);
   --navbar-bg: rgba(37, 118, 165, 0.5);
   --navbar-hover: rgba(37, 118, 165, 0.8);
@@ -16,6 +16,21 @@
   --box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   --hover-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
   --animation-time: 0.5s;
+  
+  /* Spacing */
+  --space-xs: 5px;
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 40px;
+  --space-xl: 60px;
+  
+  /* Typography */
+  --font-size-small: 14px;
+  --font-size-base: 16px;
+  --font-size-large: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+  --line-height: 1.6;
 }
 
 /* Base styles */
@@ -27,6 +42,27 @@ html {
   -o-background-size: cover;
   background-size: cover;
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--link-color) var(--content-bg);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--content-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--link-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--navbar-hover);
 }
 
 body {
@@ -37,7 +73,9 @@ body {
   margin: 0;
   text-align: center;
   animation: fadeIn 1.5s forwards;
-  line-height: 1.6;
+  line-height: var(--line-height);
+  font-size: var(--font-size-base);
+  padding-top: var(--space-xl);
 }
 
 /* Content containers */
@@ -47,34 +85,98 @@ body {
   color: var(--text-color);
   text-align: center;
   margin: auto;
-  padding: 20px;
+  padding: var(--space-md);
   box-shadow: var(--box-shadow);
-  margin-bottom: 20px;
+  margin-bottom: var(--space-md);
   transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--hover-shadow);
 }
 
 /* Text elements */
 .title {
   text-align: center;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  font-size: 2.5em;
-  margin-top: 60px;
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-size-xxl);
+  margin-top: var(--space-xl);
+  font-weight: 700;
+  background: linear-gradient(90deg, #ffffff, #88cfff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .creator {
-  margin-top: 1px;
+  margin-top: var(--space-xs);
 }
 
 .tworca {
   color: var(--link-color);
   font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.tworca::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--link-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+.tworca:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .content_text {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+}
+
+/* Heading styles */
+h3 {
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+h3::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 50px;
+  height: 2px;
+  background: var(--link-color);
+  transform: translateX(-50%);
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  filter: brightness(120%);
 }
 
 /* Responsive layouts */
@@ -82,6 +184,15 @@ body {
   .content {
     width: 85%;
     padding: 15px;
+  }
+  
+  .title {
+    font-size: 28px;
+    margin-top: 80px;
+  }
+  
+  body {
+    padding-top: 70px;
   }
 }
 

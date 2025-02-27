@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /fix/
+Disallow: /JS/
+Disallow: /New/
+Disallow: /Old/
+Disallow: /szkola/
+
+# Block all subdomains
+User-agent: *
+Host: Tymon3310.dev
+Disallow: /
+
+# Specific rule for main domain
+User-agent: *
+Host: www.Tymon3310.dev
+Allow: /

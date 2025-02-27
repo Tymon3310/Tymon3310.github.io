@@ -12,6 +12,9 @@
   --github-hover: #312c2c;
   --bluesky-color: #0560FF;
   --bluesky-hover: #0347c4;
+  
+  /* Add transition variables for theme switching */
+  --theme-transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
 }
 
 /* Theme styles */
@@ -19,6 +22,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   color: #333;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--theme-transition);
 }
 
 /* Light mode updates */
@@ -26,6 +30,7 @@
 body:has(.light-mode) #navbar {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: var(--theme-transition);
 }
 
 .light-mode ~ #navbar a, 
@@ -33,11 +38,38 @@ body:has(.light-mode) #navbar a,
 .light-mode ~ #navbar .logo, 
 body:has(.light-mode) #navbar .logo {
   color: #333;
+  transition: var(--theme-transition);
 }
 
 .light-mode ~ #navbar a:hover, 
 body:has(.light-mode) #navbar a:hover {
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Light mode bottom bar */
+.light-mode ~ .bottom,
+body:has(.light-mode) .bottom {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.light-mode ~ .bottom a,
+body:has(.light-mode) .bottom a {
+  color: #333;
+}
+
+/* Light mode back to top button */
+.light-mode ~ .back-to-top,
+body:has(.light-mode) .back-to-top {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.light-mode ~ .back-to-top:hover,
+body:has(.light-mode) .back-to-top:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Light mode mobile menu specific styles */
@@ -56,6 +88,15 @@ body:has(.light-mode) #navbar a:hover {
   .light-mode ~ #navbar .nav-links a:hover,
   body:has(.light-mode) #navbar .nav-links a:hover {
     background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .light-mode ~ .bottom,
+  body:has(.light-mode) .bottom {
+    border-radius: var(--border-radius-lg);
+    width: 85%;
+    min-width: unset;
+    margin: auto;
+    margin-bottom: 20px;
   }
 }
 
