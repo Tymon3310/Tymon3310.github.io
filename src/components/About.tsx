@@ -10,7 +10,7 @@ const techItems = [
   { icon: Server, label: 'Proxmox', sub: 'HA & HomeAssistant' },
   { icon: Wifi, label: 'Chateau Pro ax', sub: 'MikroTik Networking' },
   { icon: Cpu, label: 'Hyprland', sub: 'WM / DE' },
-  { icon: HardDrive, label: 'Bambu P1S', sub: 'AMS 2 Pro Printing' },
+  { icon: HardDrive, label: 'Bambu P1S', sub: 'Multifilament (AMS 2 Pro)' },
 ];
 
 export default function About() {
