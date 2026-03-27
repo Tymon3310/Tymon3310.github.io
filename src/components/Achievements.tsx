@@ -1,24 +1,25 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Apple, Server, Keyboard } from 'lucide-react';
+import { Apple, Server, Keyboard, ArrowUpRight } from 'lucide-react';
 
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 const achievements = [
-  {
-    icon: Apple,
-    title: 'Hackintosh Build',
-    description: 'Successfully deployed macOS 26 Tahoe on an AMD Ryzen 9 5950X and RX 6800XT hardware stack — a feat requiring meticulous OpenCore configuration and kernel patching.',
-    badge: 'macOS 26 Tahoe',
-    badgeColor: '#818cf8',
-  },
   {
     icon: Keyboard,
     title: 'Wireless Keychron Vial',
     description: 'Engineered one of the first projects to successfully enable full Vial configuration support for wireless Keychron keyboards, revolutionizing their programmability over Bluetooth / wireless.',
     badge: 'Wireless QMK/Vial',
     badgeColor: '#34d399',
+    link: 'https://github.com/Tymon3310/keychron-vial',
+  },
+  {
+    icon: Apple,
+    title: 'Hackintosh Build',
+    description: 'Successfully deployed macOS 26 Tahoe on an AMD Ryzen 9 5950X and RX 6800XT hardware stack — a feat requiring meticulous OpenCore configuration and kernel patching.',
+    badge: 'macOS 26 Tahoe',
+    badgeColor: '#818cf8',
   },
   {
     icon: Server,
@@ -87,8 +88,20 @@ export default function Achievements() {
                 </div>
 
                 {/* Card */}
-                <div className="card-glow" style={{ flex: 1, borderRadius: '20px', padding: '24px' }}>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: 'space-between', gap: '12px', marginBottom: '12px' }}>
+                <div className="card-glow" style={{ position: 'relative', flex: 1, borderRadius: '20px', padding: '24px' }}>
+                  {a.link && (
+                    <a 
+                      href={a.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      style={{ position: 'absolute', top: '24px', right: '24px', color: '#64748b', transition: 'color 0.2s' }}
+                      onMouseEnter={(e) => (e.currentTarget.style.color = '#38bdf8')}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = '#64748b')}
+                    >
+                      <ArrowUpRight size={20} />
+                    </a>
+                  )}
+                  <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: 'space-between', gap: '12px', marginBottom: '12px', paddingRight: a.link ? '32px' : '0' }}>
                     <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#e2e8f0' }}>{a.title}</h3>
                     <span className="badge" style={{
                       background: `${a.badgeColor}15`,
