@@ -16,13 +16,6 @@ interface Project {
 const projects: Project[] = [
   {
     icon: Package,
-    title: 'Prefixer',
-    description: 'Contributed tweaks and improvements to Prefixer, enhancing the functionality and usability of the application.',
-    tags: ['AUR', 'Packaging', 'Linux'],
-    link: 'https://github.com/wojtmic/prefixer',
-  },
-  {
-    icon: Package,
     title: 'AUR Package Maintainer',
     description: 'Actively maintain several packages in the Arch User Repository (AUR), including vial-keychron, pipette-desktop, prefixer, and vortex.',
     tags: ['Arch Linux', 'PKGBUILD', 'AUR', 'Shell'],
@@ -31,15 +24,15 @@ const projects: Project[] = [
   {
     icon: Bot,
     title: 'Compot Discord Bot',
-    description: 'Contributed to the frontend web dashboard and website for the Compot Discord bot. Built interactive UI components and improved the overall UX.',
+    description: 'Engineered the full frontend web dashboard and site architecture. The bot itself was built by a friend, while I focus on the interactive dashboard and UX.',
     tags: ['TypeScript', 'React', 'Frontend', 'Discord'],
-    link: 'https://compot.wojtmic.dev',
+    link: 'https://compot.rocks/',
   },
   {
     icon: House,
     title: 'Smart Home Infrastructure',
-    description: 'Custom bash scripts and IFTTT automations integrated with a dedicated Home Assistant server. Automated lighting, climate, and device management.',
-    tags: ['Home Assistant', 'Bash', 'IFTTT', 'IoT'],
+    description: 'Advanced Home Assistant deployment managing lighting, climate, and security. Features custom ESP-based modules and complex local automations.',
+    tags: ['Home Assistant', 'ESP32', 'ESPHome', 'IoT'],
   },
   {
     icon: MonitorPlay,
@@ -47,6 +40,13 @@ const projects: Project[] = [
     description: 'Personal dotfiles for my Arch Linux Hyprland setup. Includes custom Waybar styling, heavily customized Neovim configuration, and terminal setups.',
     tags: ['Arch', 'Hyprland', 'Lua', 'Bash'],
     link: 'https://github.com/Tymon3310/dotfiles',
+  },
+  {
+    icon: Package,
+    title: 'Prefixer',
+    description: 'Contributed tweaks and improvements to Prefixer, enhancing the functionality and usability of the application.',
+    tags: ['AUR', 'Packaging', 'Linux'],
+    link: 'https://github.com/wojtmic/prefixer',
   },
 ];
 

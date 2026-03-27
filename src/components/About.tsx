@@ -7,10 +7,10 @@ const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 const techItems = [
   { icon: Terminal, label: 'Arch Linux', sub: 'Daily Driver' },
-  { icon: Server, label: 'Proxmox', sub: 'Cluster Management' },
-  { icon: Wifi, label: 'MikroTik', sub: 'Networking' },
+  { icon: Server, label: 'Proxmox', sub: 'HA & HomeAssistant' },
+  { icon: Wifi, label: 'Chateau Pro ax', sub: 'MikroTik Networking' },
   { icon: Cpu, label: 'Hyprland', sub: 'WM / DE' },
-  { icon: HardDrive, label: 'Bambu P1S', sub: '3D Printing' },
+  { icon: HardDrive, label: 'Bambu P1S', sub: 'AMS 2 Pro Printing' },
 ];
 
 export default function About() {
@@ -64,10 +64,11 @@ export default function About() {
               <p>
                 My daily driver is <strong style={{ color: '#e2e8f0' }}>Arch Linux with Hyprland</strong> running on an{' '}
                 <span style={{ color: '#e2e8f0' }}>AMD Ryzen 9 5950X, 96GB RAM, and RX 6800XT</span>. 
-                When I'm not writing code, I'm usually tinkering with my{' '}
-                <span style={{ color: '#38bdf8' }}>Proxmox cluster</span>, managing my{' '}
-                <span style={{ color: '#38bdf8' }}>MikroTik networking gear</span>, or running prints on my{' '}
-                <strong style={{ color: '#e2e8f0' }}>Bambu P1S</strong>.
+                When I'm not writing code, I'm usually managing my{' '}
+                <span style={{ color: '#38bdf8' }}>MikroTik Chateau Pro ax</span>, or overseeing my{' '}
+                <span style={{ color: '#38bdf8' }}>Proxmox cluster</span>—notably running <strong style={{ color: '#e2e8f0' }}>HomeAssistant</strong> with various custom <span style={{ color: '#38bdf8' }}>ESP modules</span>. 
+                I also run high-precision prints on my{' '}
+                <strong style={{ color: '#e2e8f0' }}>Bambu P1S with AMS 2 Pro</strong>.
               </p>
             </div>
 
