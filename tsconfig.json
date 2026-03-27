@@ -1,13 +1,7 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "commonjs",
-    // "strict": true,
-    "esModuleInterop": true,
-    "lib": ["dom", "ESNext", "ES6", "ES2023"],
-    // "incremental": true,
-    // "outDir": "./src",
-  },
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules", "**/*.js"],
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }
